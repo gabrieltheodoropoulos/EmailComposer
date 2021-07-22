@@ -2,6 +2,8 @@
 
 Compose and send emails in SwiftUI using a view modifier.
 
+![EmailComposer code snippet](https://serialcoder.dev/misc/github_images/emailComposer.png)
+
 ## About EmailComposer
 
 EmailComposer library makes it pretty easy to present the system provided controller for composing emails in SwiftUI based iOS applications. All it takes is to use a **view modifier**, providing a few arguments. The rest are handled automatically.
@@ -21,7 +23,7 @@ import EmailComposer
 
 ## Documentation
 
-[This short guide](...) demonstrates how to use EmailComposer library.
+[This short guide](https://github.com/gabrieltheodoropoulos/EmailComposer/wiki) demonstrates how to use EmailComposer library.
 
 Also, documentation for this library has been generated using the DocC compiler in Xcode 13. You may [download a DocC archive](https://serialcoder.dev/downloads/documentation/emailcomposer-library/EmailComposer.doccarchive.zip) (.doccarchive) and open it with Developer Documentation in Xcode (**Note**: Xcode 13 and above is required).
 
