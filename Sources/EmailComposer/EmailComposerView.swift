@@ -22,6 +22,8 @@ struct EmailComposerView: UIViewControllerRepresentable {
         emailComposer.mailComposeDelegate = context.coordinator
         emailComposer.setSubject(emailData.subject)
         emailComposer.setToRecipients(emailData.recipients)
+        emailComposer.setCcRecipients(emailData.ccRecipients)
+        emailComposer.setBccRecipients(emailData.bccRecipients)
         emailComposer.setMessageBody(emailData.body, isHTML: emailData.isBodyHTML)
         if emailData.attachments.count > 0 {
             for attachment in emailData.attachments {
