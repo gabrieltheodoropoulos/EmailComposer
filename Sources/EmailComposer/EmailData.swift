@@ -19,6 +19,12 @@ public struct EmailData {
     
     /// The potential recipients of the email.
     public var recipients: [String]?
+
+    /// The potential carbon copy (CC) recipients of the email.
+    public var ccRecipients: [String]?
+
+    /// The potential blind carbon copy (BCC) recipients of the email.
+    public var bccRecipients: [String]?
     
     /// The email body.
     ///
