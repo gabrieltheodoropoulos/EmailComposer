@@ -62,9 +62,7 @@ struct EmailComposerView: UIViewControllerRepresentable {
                 return
             }
             
-            parent.result(.success((.init(rawValue: result.rawValue)!)))
-            
-            parent.presentationMode.wrappedValue.dismiss()
+            parent.result(.success(.init(rawValue: result.rawValue) ?? .unexpectedResult))
         }
     }
 }

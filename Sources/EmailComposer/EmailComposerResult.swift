@@ -62,6 +62,14 @@ public enum EmailComposerResult: Int, CustomStringConvertible {
     /// ```
     case deviceCannotSendEmails
     
+    /// Unexpected result.
+    ///
+    /// ```swift
+    /// // Raw value:
+    /// unexpectedResult = 5
+    /// ```
+    case unexpectedResult
+    
     /// A textual description of each case in EmailComposerResult.
     public var description: String {
         switch self {
@@ -70,6 +78,7 @@ public enum EmailComposerResult: Int, CustomStringConvertible {
             case .sent: return NSLocalizedString("Sent", comment: "")
             case .failed: return NSLocalizedString("Failed", comment: "")
             case .deviceCannotSendEmails: return NSLocalizedString("Unable to send emails from this device.", comment: "")
+            case .unexpectedResult: return NSLocalizedString("Unexpected result", comment: "")
         }
     }
 }
